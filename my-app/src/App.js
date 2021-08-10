@@ -60,7 +60,25 @@ class App extends React.Component {
               <p>following</p>
             </section>
           <p className="location">{this.state.githubUser.location}</p>
-          <p className="twitter">{this.state.githubUser.twitter}</p>
+          <p className="twitter">{this.state.githubUser.twitter_username}</p>
+          
+          <div className="userProfile">
+            {this.state.githubUserFollowers.map(avatar => {
+               return (
+                <div>
+                <img className="avatarImg" 
+                  alt="user avatar" width="260" height="260" key={avatar.login} src= {avatar.avatar_url}
+                  />
+                  <h4>{avatar.login}</h4>
+                </div>
+                )
+                
+            })}
+            
+
+            
+
+          </div>
 
         
         </div>
