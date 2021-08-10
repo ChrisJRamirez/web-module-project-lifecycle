@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

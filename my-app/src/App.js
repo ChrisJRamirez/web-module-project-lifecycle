@@ -54,6 +54,15 @@ class App extends React.Component {
           <p>{this.state.githubUser.bio}</p>
 
           <button>Edit profile</button>
+
+            <section>
+              <p>follower</p>
+              <p>following</p>
+            </section>
+          <p className="location">{this.state.githubUser.location}</p>
+          <p className="twitter">{this.state.githubUser.twitter}</p>
+
+        
         </div>
 
       </div>
