@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import axios from "axios";
-import GithubForm from "./GithubForm"
+
 
 class App extends React.Component {
   constructor() {
@@ -44,7 +44,7 @@ class App extends React.Component {
 
         <div className="userProfile">
           <img className="avatarImg" 
-          alt width="260" height="260"
+          alt="avatar" width="260" height="260"
           key={this.state.githubUser.avatar_url} 
           src={this.state.githubUser.avatar_url}/>
 
@@ -69,7 +69,7 @@ class App extends React.Component {
                 <img className="avatarImg" 
                   alt="user avatar" width="260" height="260" key={avatar.login} src= {avatar.avatar_url}
                   />
-                  <h4>{avatar.login}</h4>
+                  <h4 key={avatar.id}>{avatar.login}</h4>
                 </div>
                 )
                 
