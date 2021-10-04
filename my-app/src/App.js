@@ -69,6 +69,9 @@ class App extends React.Component {
                   alt="user avatar" width="260" height="260" key={avatar.login} src= {avatar.avatar_url}
                   />
                   <h4 key={avatar.id}>{avatar.login}</h4>
+
+                    <p className="location">{avatar.id}</p>
+                    <p className="twitter">{avatar.twitter_username}</p>
                 </div>
                 )
                 
